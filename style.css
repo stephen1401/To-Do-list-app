@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+}
+
+.main-body
+{
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+    height: 100%;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+    padding: 10px ;
+}
+
+.header .btn
+{
+    margin-left: auto;
+}
+
+.btn
+{
+    background-color: burlywood;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.btn .plus
+{
+    font-size: x-large;
+    font-weight: 800;
+    color: cornflowerblue;
+}
+
+.plus:hover
+{
+    transform: scale(0.9);
+}
+
+.box
+{
+    /* background-color: tomato; */
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+}
+
+.box .box-header{
+    width: 100%;
+    height: 30px;
+    background-color: lightgreen;
+    display: flex;
+    align-items: center ;
+}
+.btn-container
+{
+    margin-left: auto;
+    display: flex;
+    width: 50px;
+    justify-content: space-between;
+}
+.box-header .heading
+{
+    margin: 2px;
+    padding: 2px;
+}
+
+.btn-container div{
+    background-color: lightgrey;
+    margin: 2px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.box textarea
+{
+    width: 100%;
+    height: 85%;
+    outline: none;
+    border: none;
+}
+
+.content
+{
+   display: grid;
+   grid-template-columns: repeat(4,1fr); 
+}
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+}
+.dialog-box
+{
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dialog-box .dialog
+{
+    height: 150px;
+    width: 150px;
+    background-color: skyblue;
+}
+.dialog .dialog-header
+{
+    background-color: antiquewhite;
+    display: flex;
+    padding: 2px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2px;
+
+}
+.dialog-heading input
+{
+    width: 120px;
+}
+.dialog-body
+{
+    height: 100px;
+    padding: 5px;
+}
+
+.dialog-body textarea{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3px;
+   
+}
+.dialog .submit{
+    display: flex;
+    justify-content: center;
+}
+
+.cross
+{
+    height: 20px ;
+    width: 20px;
+    background-color: grey;
+    border-radius: 50%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-box{
+    display: none;
+}
+
+.error{
+    display: none;
+}
